@@ -1,0 +1,14 @@
+{
+  "name": "rules-bdd",
+  "version": "1.0.0",
+  "description": "POC of business rules BDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "author": "mli",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber": "^5.1.0"
+  }
+}
