@@ -4,9 +4,13 @@ const congnition = require('./cognition/cognition.pkg');
 const eligibility = require('./eligibility/eligibility.pkg');
 const content = require('./content/content.pkg');
 
-var ctx = JSON.parse(fs.readFileSync('request.json'));
-engine.run(ctx, congnition.rules());
-engine.run(ctx, eligibility.rules());
-engine.run(ctx, content.rules());
+var notificationRules = (ctx) => {
+    engine.run(ctx, congnition.rules());
+    engine.run(ctx, eligibility.rules());
+    engine.run(ctx, content.rules());
+    return ctx;
+}
 
-console.log(JSON.stringify(ctx));
+module.exports = {
+    notificationRules
+};

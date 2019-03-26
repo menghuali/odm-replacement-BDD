@@ -2,7 +2,8 @@ Feature: Recognize the characters of booking, guest, trip, flight and etc
     As the marketing representative, I need rules to recognize ecognize the characters of booking, guest, trip, flight and etc.
 
     Scenario Outline: Recongize booking channel by PCC
-        Given the PCC of a booking is "<PCC>"
+        Given there is a notification
+        And the PCC of a booking is "<PCC>"
         When the cognition rules are executed
         Then the booking channel should be "<expected_booking_channel>"
 
@@ -13,7 +14,8 @@ Feature: Recognize the characters of booking, guest, trip, flight and etc
             | Anything else | NORMAL                   |
 
     Scenario Outline: Recognize a child guest
-        Given a guest has SSR "<SSR>"
+        Given there is a notification
+        And a guest has SSR "<SSR>"
         When the cognition rules are executed
         Then it should be "<child_or_not>" that the guest is a child
 
