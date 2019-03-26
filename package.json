@@ -4,11 +4,15 @@
   "description": "POC of business rules BDD",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js",
+    "test-watch": "nodemon --exec 'npm test'"
   },
   "author": "mli",
   "license": "ISC",
   "devDependencies": {
     "cucumber": "^5.1.0"
+  },
+  "nodemonConfig": {
+    "ext": "js,json,feature"
   }
 }

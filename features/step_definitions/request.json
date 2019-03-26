@@ -1,0 +1,13 @@
+{
+    "flight": {},
+    "notifications": [{
+        "booking": {},
+        "guest": {
+            "ssr": [],
+            "isChild": false
+        },
+        "status": "immediate",
+        "log": [],
+        "contents": []
+    }]
+}

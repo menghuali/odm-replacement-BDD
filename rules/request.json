@@ -1,0 +1,48 @@
+{
+    "flight": {},
+    "notifications": [{
+            "booking": {
+                "pcc": "TTY"
+            },
+            "guest": {
+                "ssr": ["DOCS"]
+            },
+            "status": "immediate",
+            "log": [],
+            "contents": []
+        },
+        {
+            "booking": {
+                "pcc": "LCW"
+            },
+            "guest": {
+                "ssr": ["DOCS"]
+            },
+            "status": "immediate",
+            "log": [],
+            "contents": []
+        },
+        {
+            "booking": {
+                "pcc": "YYZ"
+            },
+            "guest": {
+                "ssr": ["CHLD"]
+            },
+            "status": "immediate",
+            "log": [],
+            "contents": []
+        },
+        {
+            "booking": {
+                "pcc": "YYZ"
+            },
+            "guest": {
+                "ssr": ["DOCS"]
+            },
+            "status": "immediate",
+            "log": [],
+            "contents": []
+        }
+    ]
+}
