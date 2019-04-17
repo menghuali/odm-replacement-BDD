@@ -11,6 +11,7 @@ class _Rule {
         contents.push('HEADER');
         contents.push('FOOTER');
         contents.push('UNSUBSCRIBE');
+        contents.push('WELCOME');
     }
 }
 
