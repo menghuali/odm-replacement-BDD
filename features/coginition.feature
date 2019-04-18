@@ -23,3 +23,9 @@ Feature: Recognize the characters of booking, guest, trip, flight and etc
             | SSR           | child_or_not |
             | CHLD          | true         |
             | Anything else | false        |
+    
+    Scenario: Recognize WVI booking
+        Given there is a notification
+        And a guest has SSR "WIVG"
+        When the cognition rules are executed
+        Then the booking channel should be "WVI"

@@ -12,6 +12,7 @@ class _Rule {
         contents.push('FOOTER');
         contents.push('UNSUBSCRIBE');
         contents.push('WELCOME');
+        contents.push('DUMMY');
     }
 }
 

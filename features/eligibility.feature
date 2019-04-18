@@ -24,3 +24,10 @@ Feature: Determine notification eligibility
         When eligibility rules are executed
         Then the notification status is "omitted"
         And the omission reason is "Omit notification because the guest is a child"
+    
+    Scenario: Always omit WVI booking
+        Given there is a notification
+            And the booking channel is WVI
+            When eligibility rules are executed
+            Then the notification status is "omitted"
+            And the omission reason is "Always omit WVI booking"

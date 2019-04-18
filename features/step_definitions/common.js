@@ -28,3 +28,8 @@ Given('the PCC of a booking is {string}', function (pcc) {
 Given('a guest has SSR {string}', function (ssr) {
     guest.ssr.push(ssr);
 });
+
+
+Given('the booking channel is WVI', function () {
+    booking.channel = "WVI";
+});
