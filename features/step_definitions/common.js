@@ -31,5 +31,5 @@ Given('a guest has SSR {string}', function (ssr) {
 
 
 Given('the booking channel is WVI', function () {
-    booking.channel = "WVI";
+    booking.channel = 'WVI';
 });

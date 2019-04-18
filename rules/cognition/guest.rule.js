@@ -13,7 +13,7 @@ class GuestRules {
 
     wvi_booking() {
         if (this.guest.ssr.includes('WVIG'))
-            this.booking.channel = "WVI";
+            this.booking.channel = 'WVI';
     }
 
     self_service_eligible() {

@@ -30,4 +30,4 @@ Feature: Determine notification eligibility
             And the booking channel is WVI
             When eligibility rules are executed
             Then the notification status is "omitted"
-            And the omission reason is "Always omit WVI booking"
+            And the omission reason is "Always omit WVI bookings"
